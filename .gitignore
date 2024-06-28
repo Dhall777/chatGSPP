@@ -1,0 +1,41 @@
+.venv
+.env
+venv
+/privateGPT-venv/*
+privateGPT-venv/*
+/privateGPT-venv/
+privateGPT-venv/
+privateGPT-venv
+
+settings-me.yaml
+
+.ruff_cache
+.pytest_cache
+.mypy_cache
+
+# byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# unit tests / coverage reports
+/tests-results.xml
+/.coverage
+/coverage.xml
+/htmlcov/
+
+# pyenv
+/.python-version
+
+# IDE
+.idea/
+.vscode/
+/.run/
+.fleet/
+
+# macOS
+.DS_Store
+
+# data generated from web scraping
+text/gspp.berkeley.edu/*.txt
+processed/*.csv
+ingested_data/*.csv
