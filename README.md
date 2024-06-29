@@ -43,7 +43,7 @@ download script, ingestion script, documents folder watch, etc.
 Full documentation on installation, dependencies, configuration, running the server, deployment options,
 ingesting local documents, API details and UI features can be found here: https://docs.privategpt.dev/
 
-## 🧩 Architcture
+## Architecture
 This project is built on top of PrivateGPT.  Conceptually, PrivateGPT is an API that wraps a RAG pipeline and exposes its
 primitives.
 * The API is built using [FastAPI](https://fastapi.tiangolo.com/) and follows
