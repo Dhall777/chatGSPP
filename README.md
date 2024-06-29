@@ -4,13 +4,16 @@
 * currently using a fully local setup that utilizes Mistral-7B for the LLM and tokenization
 * currently using BAAI for embedding and Qdrant as the vector database
 * the LLM's queried data is scraped from the main GSPP website using the web-scraper.py file (mentioned below)
+* the demo custom UI resources are located within the `~/ui/gspp-ui` directory, and uses PrivateGPT's [Python SDK](https://docs.privategpt.dev/api-reference/overview/sd-ks) to make API calls
+	* the demo custom UI is built using Flask and a barebones HTML file
 
 **To run chatGSPP:**
 * pull the repo
 * run the web-scraper.py file `python web-scraper.py`
 * ingest the scraped.csv file using [this documentation](https://docs.privategpt.dev/manual/document-management/ingestion), specifically the "bulk local ingestion" part
-	- ingestion script would look something like this `make ingest privateGPT/ingested_data -- --watch --log-file privateGPT/ingested_data/ingestion_errors.log`
-* reference [this documentation](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup) to load the dependencies and start the server, specifically the "local, llama-cpp powered setup" part
+	* ingestion script would look something like this `make ingest privateGPT/ingested_data -- --watch --log-file privateGPT/ingested_data/ingestion_errors.log`
+* reference [this documentation](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup) to load the dependencies and start the API server, specifically the "local, llama-cpp powered setup" part
+* start the demo UI server by navigating to `~/ui/gspp-ui` then run `python gspp-ui-app.py`
 
 > Install & usage docs: https://docs.privategpt.dev/
 
