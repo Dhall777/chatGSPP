@@ -1,8 +1,9 @@
 # ChatGSPP prototype
 
-**Project overview:**
-* currently using a fully local setup that utilizes Mistral-7B for the LLM and tokenization
-* currently using BAAI for embedding and Qdrant as the vector database
+**chatGSPP technical overview:**
+* using privateGPT's [fully local setup configuration](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup)
+* configured chatGSPP to use **Mistral-7B** for the LLM and tokenization
+* currently using **BAAI** for embedding and **Qdrant** as the vector database
 * the LLM's queried data is scraped from the main GSPP website using the web-scraper.py file (mentioned below)
 * the demo custom UI resources are located within the `~/ui/gspp-ui` directory, and uses PrivateGPT's [Python SDK](https://docs.privategpt.dev/api-reference/overview/sd-ks) to make API calls
 	* the demo custom UI is built using Flask and a barebones HTML file
@@ -16,7 +17,11 @@
 * start the demo UI server by navigating to `~/ui/gspp-ui` then run `python gspp-ui-app.py`
 
 > Install & usage docs: https://docs.privategpt.dev/
+## 📄 Documentation
+Full documentation on installation, dependencies, configuration, running the server, deployment options,
+ingesting local documents, API details and UI features can be found here: https://docs.privategpt.dev/
 
+## Project Summary
 ChatGSPP is built on top of PrivateGPT. PrivateGPT is a production-ready AI project that allows you to ask questions about your documents using the power
 of Large Language Models (LLMs), even in scenarios without an Internet connection. 100% private, no data leaves your
 execution environment at any point.
@@ -41,10 +46,6 @@ abstracting the retrieval of context, the prompt engineering and the response ge
 In addition to this, a working [Gradio UI](https://www.gradio.app/)
 client is provided to test the API, together with a set of useful tools such as bulk model
 download script, ingestion script, documents folder watch, etc.
-
-## 📄 Documentation
-Full documentation on installation, dependencies, configuration, running the server, deployment options,
-ingesting local documents, API details and UI features can be found here: https://docs.privategpt.dev/
 
 ## Architecture
 This project is built on top of PrivateGPT.  Conceptually, PrivateGPT is an API that wraps a RAG pipeline and exposes its
