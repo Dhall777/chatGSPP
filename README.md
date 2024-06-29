@@ -5,11 +5,11 @@
 * currently using BAAI for embedding and Qdrant as the vector database
 * the LLM's queried data is scraped from the main GSPP website using the web-scraper.py file (mentioned below)
 
-To run chatGSPP:
+**To run chatGSPP:**
 * pull the repo
 * run the web-scraper.py file `python web-scraper.py`
 * ingest the scraped.csv file using [this documentation](https://docs.privategpt.dev/manual/document-management/ingestion), specifically the "bulk local ingestion" part
-- ingestion script would look something like this `make ingest privateGPT/ingested_data -- --watch --log-file privateGPT/ingested_data/ingestion_errors.log`
+	- ingestion script would look something like this `make ingest privateGPT/ingested_data -- --watch --log-file privateGPT/ingested_data/ingestion_errors.log`
 * reference [this documentation](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup) to load the dependencies and start the server, specifically the "local, llama-cpp powered setup" part
 
 > Install & usage docs: https://docs.privategpt.dev/
@@ -47,7 +47,7 @@ download script, ingestion script, documents folder watch, etc.
 Full documentation on installation, dependencies, configuration, running the server, deployment options,
 ingesting local documents, API details and UI features can be found here: https://docs.privategpt.dev/
 
-## 🧩 Architectur
+## 🧩 Architectue
 This project is built on top of PrivateGPT.  Conceptually, PrivateGPT is an API that wraps a RAG pipeline and exposes its
 primitives.
 * The API is built using [FastAPI](https://fastapi.tiangolo.com/) and follows
