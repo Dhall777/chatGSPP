@@ -39,15 +39,11 @@ In addition to this, a working [Gradio UI](https://www.gradio.app/)
 client is provided to test the API, together with a set of useful tools such as bulk model
 download script, ingestion script, documents folder watch, etc.
 
-> 👂 **Need help applying PrivateGPT to your specific use case?**
-> [Let us know more about it](https://forms.gle/4cSDmH13RZBHV9at7)
-> and we'll try to help! We are refining PrivateGPT through your feedback.
-
 ## 📄 Documentation
 Full documentation on installation, dependencies, configuration, running the server, deployment options,
 ingesting local documents, API details and UI features can be found here: https://docs.privategpt.dev/
 
-## 🧩 Architectue
+## 🧩 Architeture
 This project is built on top of PrivateGPT.  Conceptually, PrivateGPT is an API that wraps a RAG pipeline and exposes its
 primitives.
 * The API is built using [FastAPI](https://fastapi.tiangolo.com/) and follows
