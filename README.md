@@ -15,9 +15,10 @@
 	* ingestion script would look something like this `make ingest privateGPT/ingested_data -- --watch --log-file privateGPT/ingested_data/ingestion_errors.log`
 * reference [this documentation](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup) to load the dependencies and start the API server, specifically the "local, llama-cpp powered setup" part
 * start the demo UI server by navigating to `~/ui/gspp-ui` then run `python gspp-ui-app.py`
+* navigate to the demo custom UI via http://localhost:5000 and ask the bot some questions
+	* can also access the built-in Gradio UI for testing via http://localhost:8001
 
-> Install & usage docs: https://docs.privategpt.dev/
-## 📄 Documentation
+## Documentation!
 Full documentation on installation, dependencies, configuration, running the server, deployment options,
 ingesting local documents, API details and UI features can be found here: https://docs.privategpt.dev/
 
