@@ -11,19 +11,17 @@
 ## How to run chatGSPP
 * pull the repo
 * create a virtual environment (highly recommended)
-* install dependencies
-        * `pip install -r requirements.txt`
+* install dependencies + LLM/etc
+        * `pip install make flask poetry pgpt_python docx2txt==0.8`
+	* `poetry install --extras "ui llms-llama-cpp embeddings-huggingface vector-stores-qdrant"`
+	* `poetry run python scripts/setup`
 * run the web-scraper.py file
         * `python web-scraper.py`
-* ingest the scraped.csv file using [this documentation](https://docs.privategpt.dev/manual/document-management/ingestion), specifically the "bulk local ingestion" part
-        * ingestion script would look something like this:
-                * `make ingest ~/chatGSPP/ingested_data -- --watch --log-file ~/chatGSPP/ingested_data/ingestion_errors.log`
+* ingest the scraped.csv file using [this documentation](https://docs.privategpt.dev/manual/document-management/ingestion), specifica>        * ingestion script would look something like this:
+                * `make ingest ~/chatGSPP/ingested_data -- --log-file ~/chatGSPP/ingested_data/ingestion_errors.log`
 * reference [this documentation](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup) to load the dependencies and start the API server, specifically the "local, llama-cpp powered setup" part
-        * our app starts by sequentially running the commands below:
-                * `poetry install --extras "ui llms-llama-cpp embeddings-huggingface vector-stores-qdrant"`
-                * `poetry run python scripts/setup`
-                * `PGPT_PROFILES=local make run`
-* start the demo UI server by
+	* `PGPT_PROFILES=local make run`
+* now you can start the demo UI server by
         * navigating to `~/ui/gspp-ui`
         * running `python gspp-ui-app.py`
 * navigate to the demo custom UI via http://localhost:5000 and ask the bot some questions
