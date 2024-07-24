@@ -6,7 +6,7 @@
 * currently using **BAAI** for embedding and **Qdrant** as the vector database
 * the LLM's queried data is scraped from the main GSPP website using the web-scraper.py file (mentioned below)
 * the demo custom UI resources are located within the `~/ui/gspp-ui` directory, and uses PrivateGPT's [Python SDK](https://docs.privategpt.dev/api-reference/overview/sd-ks) to make API calls
-        * the demo custom UI is built using Flask and a barebones HTML file
+	* the demo custom UI is built using Flask and a barebones HTML file
 
 ## How to run chatGSPP
 * pull the repo
