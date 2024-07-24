@@ -16,16 +16,16 @@
 	* `poetry install --extras "ui llms-llama-cpp embeddings-huggingface vector-stores-qdrant"`
 	* `poetry run python scripts/setup`
 * run the web-scraper.py file
-        * `python web-scraper.py`
+	* `python web-scraper.py`
 * ingest the scraped.csv file using [this documentation](https://docs.privategpt.dev/manual/document-management/ingestion), specifica>        * ingestion script would look something like this:
-                * `make ingest ~/chatGSPP/ingested_data -- --log-file ~/chatGSPP/ingested_data/ingestion_errors.log`
+	* `make ingest ~/chatGSPP/ingested_data -- --log-file ~/chatGSPP/ingested_data/ingestion_errors.log`
 * reference [this documentation](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup) to load the dependencies and start the API server, specifically the "local, llama-cpp powered setup" part
 	* `PGPT_PROFILES=local make run`
 * now you can start the demo UI server by
-        * navigating to `~/ui/gspp-ui`
-        * running `python gspp-ui-app.py`
+	* navigating to `~/ui/gspp-ui`
+	* running `python gspp-ui-app.py`
 * navigate to the demo custom UI via http://localhost:5000 and ask the bot some questions
-        * can also access the built-in Gradio UI for testing via http://localhost:8001
+	* can also access the built-in Gradio UI for testing via http://localhost:8001
 * to-do: create a cool UI so we can add this functionality to GSPP's website :)
 
 ## More documentation!
