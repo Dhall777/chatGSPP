@@ -11,7 +11,7 @@
 ## How to run chatGSPP
 * pull the repo
 * create a virtual environment (highly recommended)
-* install dependencies and LLM
+* install dependencies and LLM/etc
 	* `pip install make flask poetry pgpt_python docx2txt==0.8`
 	* `poetry install --extras "ui llms-llama-cpp embeddings-huggingface vector-stores-qdrant"`
 	* `poetry run python scripts/setup`
