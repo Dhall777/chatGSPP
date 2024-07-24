@@ -1,0 +1,46 @@
+.venv
+.env
+venv
+/chatGSPP-venv/*
+chatGSPP-venv/*
+/chatGSPP-venv/
+chatGSPP-venv/
+chatGSPP-venv
+
+settings-me.yaml
+
+.ruff_cache
+.pytest_cache
+.mypy_cache
+
+# byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# unit tests / coverage reports
+/tests-results.xml
+/.coverage
+/coverage.xml
+/htmlcov/
+
+# pyenv
+/.python-version
+
+# IDE
+.idea/
+.vscode/
+/.run/
+.fleet/
+
+# macOS
+.DS_Store
+
+# asdf config file
+/.tool-versions/
+/.tool-versions
+.tool-versions
+
+# ignore data generated from web scraping
+text/gspp.berkeley.edu/*.txt
+ingested_data/*.csv
+/ingested_data/
