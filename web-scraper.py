@@ -117,7 +117,7 @@ def crawl(url):
     seen = set([url])
 
     # Maximum number of pages to crawl
-    max_pages = 10
+    max_pages = 100000000000
 
     # Counter to keep track of the number of pages processed
     pages_processed = 0
