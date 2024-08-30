@@ -1,7 +1,8 @@
 # ChatGSPP prototype
 
 ## Technical overview
-* using privateGPT's [fully local setup configuration](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup)
+* using privateGPT's [fully local setup configuration](https://docs.privategpt.dev/installation/getting-started/installation#local-llama-cpp-powered-setup) for the LLM and tokenizer
+* custom web scraping bot that scrapes raw HTML data per web page (using depth-first search), cleans it, formats it as a Pandas DataFrame, then saves the data frame as a CSV 
 * configured chatGSPP to use **Mistral-7B** for the LLM and tokenization
 * currently using **BAAI** for embedding and **Qdrant** as the vector database
 * the LLM's queried data is scraped from the main GSPP website using the web-scraper.py file (mentioned below)
