@@ -6,14 +6,13 @@ llm:
   mode: llamacpp
   # Should be matching the selected model
   max_new_tokens: 512
-  context_window: 32000
-  tokenizer: mistralai/Mistral-7B-Instruct-v0.2
-  # tokenizer: microsoft/deberta-v3-base
-  prompt_style: "mistral"
+  context_window: 4096
+  tokenizer: meta-llama/Llama-2-7b-chat-hf
+  prompt_style: "llama2"
 
 llamacpp:
-  llm_hf_repo_id: TheBloke/Mistral-7B-Instruct-v0.2-GGUF
-  llm_hf_model_file: mistral-7b-instruct-v0.2.Q4_K_M.gguf
+  llm_hf_repo_id: TheBloke/Llama-2-7B-Chat-GGUF
+  llm_hf_model_file: llama-2-7b-chat.Q4_K_M.gguf
 
 embedding:
   mode: huggingface
