@@ -40,3 +40,4 @@ ingested_data/
 
 # ignore local data (milvus, qdrant, etc)
 volumes/
+local_data/
