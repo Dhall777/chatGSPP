@@ -44,3 +44,9 @@ __pycache__/
 text/gspp.berkeley.edu/*.txt
 ingested_data/*.csv
 /ingested_data/
+
+# ignore milvus data
+volumes/
+/volumes/
+volumes/*
+/volumes/*
