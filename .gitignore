@@ -1,7 +1,6 @@
 .venv
 .env
 venv
-chatGSPP-venv/*
 chatGSPP-venv/
 
 settings-me.yaml
@@ -36,10 +35,9 @@ __pycache__/
 #.tool-versions/
 
 # ignore data generated from web scraping
-text/gspp.berkeley.edu/*.txt
-ingested_data/*.csv
+text/
 ingested_data/
 
 # ignore milvus data
 volumes/
-volumes/*
+volumes/
