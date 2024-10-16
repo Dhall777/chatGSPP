@@ -39,4 +39,4 @@ text/
 ingested_data/
 
 # ignore milvus data
-volumes/
+volumes/*
