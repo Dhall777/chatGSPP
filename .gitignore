@@ -38,5 +38,5 @@ __pycache__/
 text/
 ingested_data/
 
-# ignore milvus data
+# ignore local data (milvus, qdrant, etc)
 volumes/
