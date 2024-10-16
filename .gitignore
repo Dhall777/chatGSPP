@@ -1,11 +1,8 @@
 .venv
 .env
 venv
-/chatGSPP-venv/*
 chatGSPP-venv/*
-/chatGSPP-venv/
 chatGSPP-venv/
-chatGSPP-venv
 
 settings-me.yaml
 
@@ -36,17 +33,13 @@ __pycache__/
 .DS_Store
 
 # asdf config file
-/.tool-versions/
-/.tool-versions
-.tool-versions
+#.tool-versions/
 
 # ignore data generated from web scraping
 text/gspp.berkeley.edu/*.txt
 ingested_data/*.csv
-/ingested_data/
+ingested_data/
 
 # ignore milvus data
 volumes/
-/volumes/
 volumes/*
-/volumes/*
