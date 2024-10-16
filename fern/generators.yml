@@ -1,8 +1,0 @@
-groups:
-  public:
-    generators:
-      - name: fernapi/fern-python-sdk
-        version: 0.6.2
-        output:
-          location: local-file-system
-          path: ../../pgpt-sdk/python
