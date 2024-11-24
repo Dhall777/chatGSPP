@@ -1,0 +1,129 @@
+# Main Fern configuration file
+instances:
+  - url: privategpt.docs.buildwithfern.com
+    custom-domain: docs.privategpt.dev
+
+title: PrivateGPT | Docs
+
+# The tabs definition, in the top left corner
+tabs:
+  overview:
+    display-name: Overview
+    icon: "fa-solid fa-home"
+  quickstart:
+    display-name: Quickstart
+    icon: "fa-solid fa-rocket"
+  installation:
+    display-name: Installation
+    icon: "fa-solid fa-download"
+  manual:
+    display-name: Manual
+    icon: "fa-solid fa-book"
+  recipes:
+    display-name: Recipes
+    icon: "fa-solid fa-flask"
+  api-reference:
+    display-name: API Reference
+    icon: "fa-solid fa-file-contract"
+
+# Definition of tabs contents, will be displayed on the left side of the page, below all tabs
+navigation:
+  # The default tab
+  - tab: overview
+    layout:
+      - section: Welcome
+        contents:
+          - page: Introduction
+            path: ./docs/pages/overview/welcome.mdx
+  - tab: quickstart
+    layout:
+      - section: Getting started
+        contents:
+          - page: Quickstart
+            path: ./docs/pages/quickstart/quickstart.mdx
+  # How to install PrivateGPT, with FAQ and troubleshooting
+  - tab: installation
+    layout:
+      - section: Getting started
+        contents:
+          - page: Main Concepts
+            path: ./docs/pages/installation/concepts.mdx
+          - page: Installation
+            path: ./docs/pages/installation/installation.mdx
+          - page: Troubleshooting
+            path: ./docs/pages/installation/troubleshooting.mdx
+  # Manual of PrivateGPT: how to use it and configure it
+  - tab: manual
+    layout:
+      - section: General configuration
+        contents:
+          - page: Configuration
+            path: ./docs/pages/manual/settings.mdx
+      - section: Document management
+        contents:
+          - page: Ingestion
+            path: ./docs/pages/manual/ingestion.mdx
+          - page: Deletion
+            path: ./docs/pages/manual/ingestion-reset.mdx
+      - section: Storage
+        contents:
+          - page: Vector Stores
+            path: ./docs/pages/manual/vectordb.mdx
+          - page: Node Stores
+            path: ./docs/pages/manual/nodestore.mdx
+      - section: Advanced Setup
+        contents:
+          - page: LLM Backends
+            path: ./docs/pages/manual/llms.mdx
+          - page: Reranking
+            path: ./docs/pages/manual/reranker.mdx
+      - section: User Interface
+        contents:
+          - page: Gradio Manual
+            path: ./docs/pages/ui/gradio.mdx
+          - page: Alternatives
+            path: ./docs/pages/ui/alternatives.mdx
+  - tab: recipes
+    layout:
+      - section: Getting started
+        contents:
+          - page: Quickstart
+            path: ./docs/pages/recipes/quickstart.mdx
+      - section: General use cases
+        contents:
+          - page: Summarize
+            path: ./docs/pages/recipes/summarize.mdx
+  # More advanced usage of PrivateGPT, by API
+  - tab: api-reference
+    layout:
+      - section: Overview
+        contents:
+          - page : API Reference overview
+            path: ./docs/pages/api-reference/api-reference.mdx
+          - page: SDKs
+            path: ./docs/pages/api-reference/sdks.mdx
+      - api: API Reference
+
+# Definition of the navbar, will be displayed in the top right corner.
+# `type:primary` is always displayed at the most right side of the navbar
+navbar-links:
+  - type: secondary
+    text: Contact us
+    url: "mailto:hello@zylon.ai"
+  - type: github
+    value: "https://github.com/zylon-ai/private-gpt"
+  - type: primary
+    text: Join the Discord
+    url: https://discord.com/invite/bK6mRVpErU
+
+colors:
+  accentPrimary:
+    dark: "#C6BBFF"
+    light: "#756E98"
+
+logo:
+  dark: ./docs/assets/logo_light.png
+  light: ./docs/assets/logo_dark.png
+  height: 50
+
+favicon: ./docs/assets/favicon.ico
