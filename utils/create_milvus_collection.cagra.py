@@ -113,16 +113,16 @@ def create_milvus_collection(
         "index_type": "GPU_CAGRA",
         "metric_type": "IP",  # Options: "L2", "IP", "COSINE"
         "params": {
-            "intermediate_graph_degree": 20,     # Affects recall and build time by determining the graph’s degree before pruning
+            "intermediate_graph_degree": 21,     # Affects recall and build time by determining the graph’s degree before pruning
             "graph_degree": 16,                  # Sets the graph's degree after pruning. Must be smaller than intermediate_graph_degree
             "build_algo": "NN_DESCENT",          # Chooses the graph generation algorithm (IVF_PQ for higher recall or NN_DESCENT for faster builds with potentially lower recall)
-            "itopk_size": 256,                    # Size of intermediate results during the search. Must be at least equal to the final top-K value and typically a power of 2
+            "itopk_size": 256,                   # Size of intermediate results during the search. Must be at least equal to the final top-K value and typically a power of 2
             "search_width": 8,                   # Number of entry points into the CAGRA graph during the search. Higher values can improve recall but may impact speed
             "min_iterations": 5,                 # Controls the search iteration process. Defaults to 0 (automatic determination)
-            "max_iterations": 15,                 # Controls the search iteration process. Defaults to 0 (automatic determination)
-            "team_size": 16,                      # Number of CUDA threads used for calculating metric distances on the GPU. Defaults to 0 (automatic determination)
+            "max_iterations": 15,                # Controls the search iteration process. Defaults to 0 (automatic determination)
+            "team_size": 16,                     # Number of CUDA threads used for calculating metric distances on the GPU. Defaults to 0 (automatic determination)
             "top-K": 50,                         # Number of returned docs in the search. Higher values can improve recall but may impact speed.
-            "cache_dataset_on_device": True     # cache the original dataset in GPU memory (improves recall, but more GPU intensive)
+            "cache_dataset_on_device": True      # cache the original dataset in GPU memory (improves recall, but more GPU intensive)
         }
     }
 

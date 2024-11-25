@@ -85,7 +85,7 @@ def setup_logging(log_queue):
     logger.setLevel(logging.INFO)
 
     # Create handlers
-    file_handler = logging.FileHandler("crawler.log")
+    file_handler = logging.FileHandler("local_data/logs/crawler.log")
     file_handler.setLevel(logging.INFO)
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.INFO)

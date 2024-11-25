@@ -1,10 +1,10 @@
-# ChatGSPP
+# ChatGSPP ![Alt text](local_data/images/cgspp.png?raw=true)
 
 ## Technical overview
 * to be filled out soon...
 
 ## How to run chatGSPP
-*to be filled out soon...
+* to be filled out soon...
 
 ## More documentation!
 Full documentation on installation, dependencies, configuration, running the server, deployment options,
