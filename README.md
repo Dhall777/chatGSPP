@@ -1,16 +1,16 @@
-# ChatGSPP ![Alt text](images/cgspp.png?raw=true)
-
-## Technical overview
+![Alt text](images/cgspp.png?raw=true "ChatGSPP")
+# ChatGSPP 
+### Technical overview
 * to be filled out soon...
 
-## How to run chatGSPP
+### How to run chatGSPP
 * to be filled out soon...
 
-## More documentation!
+### More documentation!
 Full documentation on installation, dependencies, configuration, running the server, deployment options,
 ingesting local documents, API details and UI features can be found here: https://docs.privategpt.dev/
 
-## Project Summary
+### Project Summary
 ChatGSPP is built on top of PrivateGPT. PrivateGPT is a production-ready AI project that allows you to ask questions about your documents using the power
 of Large Language Models (LLMs), even in scenarios without an Internet connection. 100% private, no data leaves your
 execution environment at any point.
@@ -36,7 +36,7 @@ In addition to this, a working [Gradio UI](https://www.gradio.app/)
 client is provided to test the API, together with a set of useful tools such as bulk model
 download script, ingestion script, documents folder watch, etc.
 
-## Architecture
+### Architecture
 This project is built on top of PrivateGPT.  Conceptually, PrivateGPT is an API that wraps a RAG pipeline and exposes its
 primitives.
 * The API is built using [FastAPI](https://fastapi.tiangolo.com/) and follows
@@ -65,7 +65,7 @@ Main building blocks:
   `LLMComponent` is in charge of providing an actual implementation of an `LLM`
   (for example `LlamaCPP` or `OpenAI`).
 
-## 🤗 Partners & Supporters of PrivateGPT
+### 🤗 Partners & Supporters of PrivateGPT
 PrivateGPT is actively supported by the teams behind:
 * [Qdrant](https://qdrant.tech/), providing the default vector database
 * [Fern](https://buildwithfern.com/), providing Documentation and SDKs
