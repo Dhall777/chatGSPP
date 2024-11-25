@@ -1,4 +1,4 @@
-# ChatGSPP ![Alt text](local_data/images/cgspp.png?raw=true)
+# ChatGSPP ![Alt text](/usr/local/ai-apps/private-gpt/local_data/images/cgspp.png?raw=true)
 
 ## Technical overview
 * to be filled out soon...
