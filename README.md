@@ -5,7 +5,7 @@
 
 ## Introduction
 
-ChatGSPP is a chatbot application designed to answer questions about the [GSPP website](https://gspp.berkeley.edu).  Its RAG documents are up to date as of October 2024.  This project is built on top of [PrivateGPT](https://github.com/zylon-ai/private-gpt/tree/main), a production-ready AI solution that enables you to ask questions about your documents using the power of Large Language Models (LLMs), even without an Internet connection. With 100% privacy, no data leaves your execution environment at any point.
+**ChatGSPP** is a chatbot application designed to answer questions about the [GSPP website](https://gspp.berkeley.edu).  Its RAG documents are up to date as of October 2024.  This project is built on top of [PrivateGPT](https://github.com/zylon-ai/private-gpt/tree/main), a production-ready AI solution that enables you to ask questions about your documents using the power of Large Language Models (LLMs), even without an Internet connection. With 100% privacy, no data leaves your execution environment at any point.
 
 
 ## ChatGSPP Technical Overview
