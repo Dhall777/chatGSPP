@@ -1,5 +1,5 @@
-| ChatGSPP | <img src="images/cgspp.png" alt="ChatGSPP Logo" width="100"/> |
-| -------- | -------------------------------------------------------------- |
+<h1><img src="images/cgspp.png" alt="ChatGSPP Logo" width="100" style="vertical-align: middle;"/> ChatGSPP</h1>
+
 ![GitHub issues](https://img.shields.io/github/issues/Dhall777/chatGSPP)
 ![GitHub license](https://img.shields.io/github/license/Dhall777/chatGSPP)
 
