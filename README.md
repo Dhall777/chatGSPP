@@ -1,4 +1,4 @@
-<h1><img src="images/cgspp.png" alt="ChatGSPP Logo" width="50" style="vertical-align: middle;"/> ChatGSPP</h1>
+<h1><img src="images/cgspp.png" alt="ChatGSPP Logo" width="100" style="vertical-align: middle;"/> ChatGSPP</h1>
 
 ![GitHub issues](https://img.shields.io/github/issues/Dhall777/chatGSPP)
 ![GitHub license](https://img.shields.io/github/license/Dhall777/chatGSPP)
@@ -7,21 +7,26 @@
 
 Welcome to **ChatGSPP**! This project is built on top of [PrivateGPT](https://github.com/your-repo/privategpt), a production-ready AI solution that enables you to ask questions about your documents using the power of Large Language Models (LLMs), even without an Internet connection. With 100% privacy, no data leaves your execution environment at any point.
 
+
 ## ChatGSPP Technical Overview
 
 *To be filled out soon...*
+
 
 ## How to Run ChatGSPP
 
 *To be filled out soon...*
 
+
 ## Documentation
 
-Comprehensive documentation on installation, dependencies, configuration, running the server, deployment options, ingesting local documents, API details, and UI features can be found here: [ChatGSPP Documentation](https://docs.privategpt.dev/)
+Comprehensive documentation on installation, dependencies, configuration, running the server, deployment options, and ingesting local documents can be found here: [ChatGSPP Documentation](https://docs.google.com/document/d/1U4MIa294UJQdQnLpThwAJ_8dygTd1Ki5HUjMBi0DiLc/edit?usp=sharing)
+
 
 ## Project Summary
 
 **ChatGSPP** extends the capabilities of **PrivateGPT** into the world of website chatbots, conceptualizing it as an API that wraps a Retrieval Augmented Generation (RAG) pipeline and exposes its primitives.
+
 
 ### PrivateGPT Key Features
 
@@ -34,6 +39,7 @@ Comprehensive documentation on installation, dependencies, configuration, runnin
   - **Contextual Chunks Retrieval:** Retrieves the most relevant chunks of text from ingested documents based on queries.
 
 In addition to the API, **PrivateGPT** includes a working [Gradio UI](https://www.gradio.app/) client for testing the API, along with tools such as bulk model download scripts, ingestion scripts, and a documents folder watch feature.
+
 
 ## Partners & Supporters
 
@@ -50,6 +56,7 @@ This project is strongly influenced and supported by other amazing projects such
 - [LlamaCpp](https://github.com/ggerganov/llama.cpp)
 - [Chroma](https://www.trychroma.com/)
 - [SentenceTransformers](https://www.sbert.net/)
+
 
 ## Contact
 
