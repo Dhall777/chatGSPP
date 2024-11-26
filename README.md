@@ -1,4 +1,4 @@
-<h1>ChatGSPP <img src="images/cgspp.png" alt="ChatGSPP Logo" width="100" style="vertical-align: middle; margin-left: 5px;"/></h1>
+<h1>ChatGSPP <img src="images/cgspp.png" alt="ChatGSPP Logo" width="100" style="vertical-align: middle; margin-left: 0px;"/></h1>
 
 ![GitHub issues](https://img.shields.io/github/issues/Dhall777/chatGSPP)
 ![GitHub license](https://img.shields.io/github/license/Dhall777/chatGSPP)
