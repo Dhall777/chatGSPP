@@ -1,11 +1,11 @@
-<h1><img src="images/cgspp.png" alt="ChatGSPP Logo" width="100" style="vertical-align: middle;"/> ChatGSPP</h1>
+<h1><img src="images/cgspp.png" alt="ChatGSPP Logo" width="100" style="vertical-align: right;"/> ChatGSPP</h1>
 
 ![GitHub issues](https://img.shields.io/github/issues/Dhall777/chatGSPP)
 ![GitHub license](https://img.shields.io/github/license/Dhall777/chatGSPP)
 
 ## Introduction
 
-Welcome to **ChatGSPP**! This project is built on top of [PrivateGPT](https://github.com/your-repo/privategpt), a production-ready AI solution that enables you to ask questions about your documents using the power of Large Language Models (LLMs), even without an Internet connection. With 100% privacy, no data leaves your execution environment at any point.
+Welcome to **ChatGSPP**! This project is built on top of [PrivateGPT](https://github.com/zylon-ai/private-gpt/tree/main), a production-ready AI solution that enables you to ask questions about your documents using the power of Large Language Models (LLMs), even without an Internet connection. With 100% privacy, no data leaves your execution environment at any point.
 
 
 ## ChatGSPP Technical Overview
